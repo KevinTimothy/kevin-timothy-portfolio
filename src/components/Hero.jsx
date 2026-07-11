@@ -122,7 +122,7 @@ export default function Hero({ dark }) {
               }}
             >
               <span className="w-1.5 h-1.5 rounded-full bg-current animate-pulse" />
-              Open to opportunities
+              Researching & Engineering Agentic AI — MVP to Production
             </div>
 
             <h1
