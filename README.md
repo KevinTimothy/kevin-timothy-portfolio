@@ -49,10 +49,10 @@ npm run build      # outputs to dist/
 
 The repo includes `netlify.toml` — connect the GitHub repo to Netlify and it deploys automatically on every push.
 
-| Setting | Value |
-|---------|-------|
-| Build command | `npm run build` |
-| Publish directory | `dist` |
+| Setting           | Value           |
+| ----------------- | --------------- |
+| Build command     | `npm run build` |
+| Publish directory | `dist`          |
 
 ## Updating content
 
