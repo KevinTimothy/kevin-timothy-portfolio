@@ -1,6 +1,6 @@
 import { useReveal } from '../hooks/useReveal'
-import { GraduationCap, MapPin, Award, ExternalLink } from 'lucide-react'
-import { personal, certifications } from '../data/portfolio'
+import { GraduationCap, MapPin } from 'lucide-react'
+import { personal } from '../data/portfolio'
 
 export default function About({ dark }) {
   const ref = useReveal()
@@ -30,7 +30,7 @@ export default function About({ dark }) {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-10">
+          <div className="grid md:grid-cols-2 gap-10 items-start">
             {/* Bio */}
             <div>
               <p
@@ -74,9 +74,8 @@ export default function About({ dark }) {
               </div>
             </div>
 
-            {/* Education + Certifications */}
-            <div className="space-y-5">
-              {/* Education card */}
+            {/* Education */}
+            <div>
               <div
                 className="rounded-xl p-5 border shadow-card"
                 style={cardStyle}
@@ -101,41 +100,6 @@ export default function About({ dark }) {
                   </div>
                 </div>
               </div>
-
-              {/* Certification cards */}
-              {certifications.map((cert, i) => (
-                <a
-                  key={i}
-                  href={cert.badge}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-start gap-3 rounded-xl p-5 border shadow-card transition-all duration-200 hover:scale-[1.01] hover:border-accent-500 group"
-                  style={cardStyle}
-                >
-                  <div
-                    className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0"
-                    style={{ background: `${cert.color}18` }}
-                  >
-                    <Award size={17} style={{ color: cert.color }} />
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <div
-                      className="text-sm font-semibold leading-snug"
-                      style={{ color: dark ? '#ffffff' : '#0b0b0b' }}
-                    >
-                      {cert.title}
-                    </div>
-                    <div className="text-xs mt-0.5" style={{ color: '#898781' }}>
-                      {cert.issuer}
-                    </div>
-                  </div>
-                  <ExternalLink
-                    size={13}
-                    className="flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity"
-                    style={{ color: '#6758e8' }}
-                  />
-                </a>
-              ))}
             </div>
           </div>
         </div>

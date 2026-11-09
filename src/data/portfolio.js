@@ -16,18 +16,39 @@ export const personal = {
 
 export const certifications = [
   {
+    title: 'AWS Certified Generative AI Developer — Professional',
+    issuer: 'Amazon Web Services Training and Certification',
+    badge: 'https://www.credly.com/badges/737779c3-213d-4543-964c-7bc1bc721061',
+    color: '#FF9900',
+    issuerShort: 'AWS',
+  },
+  {
+    title: 'AWS Partner: Forward Deployed Engineer (FDE) — Advanced',
+    issuer: 'Amazon Web Services Training and Certification',
+    badge: 'https://www.credly.com/badges/245f0fb1-7ad0-487c-8a7e-311a56965095',
+    color: '#FF9900',
+    issuerShort: 'AWS',
+  },
+  {
     title: 'AWS Certified Solutions Architect — Associate',
-    issuer: 'Amazon Web Services',
+    issuer: 'Amazon Web Services Training and Certification',
     badge: 'https://www.credly.com/badges/048af3d6-0ac9-4bb7-b494-5af2abb9b82f/email',
     color: '#FF9900',
-    icon: 'aws',
+    issuerShort: 'AWS',
   },
   {
     title: 'Databricks Certified Machine Learning Professional',
     issuer: 'Databricks',
     badge: 'https://credentials.databricks.com/a36a32f3-2acb-466a-8e8a-77693b26b5f6#acc.0HGbjmlU',
     color: '#FF3621',
-    icon: 'databricks',
+    issuerShort: 'Databricks',
+  },
+  {
+    title: 'Claude Certified Architect — Foundations',
+    issuer: 'Anthropic',
+    badge: 'https://www.credly.com/badges/3c2b9c9c-1efc-4ca8-b74f-a933447d2580',
+    color: '#c96a2e',
+    issuerShort: 'Anthropic',
   },
 ]
 
